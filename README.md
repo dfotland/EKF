@@ -6,8 +6,9 @@ This repo includes code that I am using to understand the differnet kind of Kahl
 
 ## Resources
 - http://web.mit.edu/kirtley/kirtley/binlustuff/literature/control/Kalman%20filter.pdf
+- http://www.cs.unc.edu/~tracker/media/pdf/SIGGRAPH2001_CoursePack_08.pdf
 - http://biorobotics.ri.cmu.edu/papers/sbp_papers/integrated3/kleeman_kalman_basics.pdf High level slides with formatting errors
 
 ## Basic Kahlman Filter
-The system consists of a state vector X, that is not directly observable. Observations are done using sensors whose values depend on X in a linear way, so the values of the observations Y can be described as Y = AX + n. The Y and X vectors can have different sizes. A is a rectangular matrix. AX is matric multiple, and n is gaussian noise vector (same size as Y), with a different mean and variance for each entry.
+The system consists of a state vector X, that is not directly observable. Observations are done using sensors whose values depend on X in a linear way, so the values of the observations Y can be described as Y = AX + n. The Y and X vectors can have different sizes. A is a rectangular matrix. AX is matric multiple, and n is gaussian noise vector (same size as Y), with a different mean and variance for each entry. The Kahlman filter estimates X (called Xhat), given Y. The estimate is the most likely value of X that is explained by Y.
 
